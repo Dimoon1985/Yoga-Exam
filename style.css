@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+  /* font-family: 'Passion One', sans-serif; */
+}
+body {
+  height: 100vh;
+}
+.container {
+  max-width: 1490px;
+  margin: 0 auto;
+  padding: 15px 30px;
+}
+.card-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 675px);
+  gap: 30px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  border-radius: 10px;
+  background: #d9d9d9;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  padding: 11px;
+  width: 180px;
+  height: 40px;
+  margin: 15px;
+  border-radius: 10px;
+  border: 1px solid #858585;
+  background: #fff;
+}
+.error-label {
+  display: block;
+  color: #96171a;
+}
+.button {
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  width: 180px;
+  height: 40px;
+  margin: 15px;
+  border-radius: 10px;
+  border: 1px solid #858585;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+  box-shadow: 0px 2px 0px 0px rgba(34, 60, 80, 0.5);
+}
+.button:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+/* <!-- Карточка вопросов --> */
+
+.card__question-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #d9d9d9;
+  border-radius: 10px;
+}
+
+.card__question {
+  width: 308px;
+  height: 410px;
+  border-radius: 10px;
+  border: 1px solid #858585;
+  background: #fff;
+  margin: 20px 10px 20px 20px;
+}
+.card__question-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px;
+  padding: 12px 0;
+}
+.card__question-main-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.card__question-main-title h2 {
+  color: #000;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 21px;
+}
+.card__question-main-title span {
+  color: #96171a;
+  text-align: right;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+}
+.card__question-main-timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #000;
+  text-align: center;
+  margin-top: 12px;
+}
+.card__timer-reset {
+  width: 92px;
+  height: 28px;
+  border-radius: 10px;
+  border: 1px solid #858585;
+  background: #fbfbab;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+  box-shadow: 0px 2px 0px 0px rgba(34, 60, 80, 0.5);
+}
+.card__timer-reset:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+.card__timer-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 19px;
+}
+/* .card__timer-display span {
+  display: contents;
+} */
+.card__timer-ready {
+  width: 92px;
+  height: 28px;
+  border-radius: 10px;
+  border: 1px solid #858585;
+  background: #8bfb8b;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+  box-shadow: 0px 2px 0px 0px rgba(34, 60, 80, 0.5);
+}
+.card__timer-ready:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+.card__question-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.card__question-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.item-number {
+  display: flex;
+  width: 26px;
+  height: 31px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 6px 16px 20px;
+  color: #96171a;
+  text-align: center;
+  font-family: Passion One;
+  font-size: 24px;
+  font-weight: 400;
+}
+.item-text {
+  position: relative;
+  display: flex;
+  width: 230px;
+  height: 63px;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 5px 5px 5px 0;
+  margin: 0 12px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 400;
+}
+.item-text::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 53px;
+  background: #6f6f6f;
+  top: 5px;
+  left: -12px;
+  z-index: 2;
+}
+
+/* <!-- Карточка с изображением --> */
+.card__image {
+  width: 308px;
+  height: 410px;
+  padding: 40px 0;
+  border-radius: 10px;
+  border: 1px solid #858585;
+  background: #fff;
+  margin: 20px 20px 20px 10px;
+}

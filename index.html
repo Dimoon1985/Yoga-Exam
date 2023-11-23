@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-wrap">
+        <div class="card" id="card">
+          <div action="" class="form" id="add-form">
+            <input class="input" type="text" id="inp" />
+            <button class="button" id="btn">СГЕНЕРИРОВАТЬ</button>
+          </div>
+        </div>
+
+        <!-- КАРТОЧКА ВОПРОСОВ  -->
+
+        <div class="card__question-wrap">
+          <div class="card__question">
+            <div class="card__question-main">
+              <div class="card__question-main-title">
+                <h2>Веретенникова Екатерина</h2>
+                <span>#16384</span>
+              </div>
+
+              <!-- ТАЙМЕР-------- -->
+
+              <div class="card__question-main-timer">
+                <button class="card__timer-reset" id="reset">сброс</button>
+                <div class="card__timer-display" id="display">
+                  <span class="min">00</span>
+                  <span class="colon">:</span>
+                  <span class="sec">00</span>
+                  <span class="colon">:</span>
+                  <span class="mil-sec">00</span>
+                </div>
+                <button class="card__timer-ready" id="ready">готово</button>
+              </div>
+            </div>
+
+            <!-- КОНЕЦ ТАЙМЕР------ -->
+
+            <div class="card__question-list">
+              <div class="card__question-list-item">
+                <div class="item-number">1</div>
+                <div class="item-text">
+                  Назовите доступные направления подвижности для шейного отдела
+                  позвоночника
+                </div>
+              </div>
+            </div>
+            <div class="card__question-list">
+              <div class="card__question-list-item">
+                <div class="item-number">2</div>
+                <div class="item-text">
+                  Назовите точки крепления и функции мышц плечевого пояса
+                  (вокруг лопатки)
+                </div>
+              </div>
+            </div>
+            <div class="card__question-list">
+              <div class="card__question-list-item">
+                <div class="item-number">3</div>
+                <div class="item-text">
+                  Назовите мышцы-синергисты для локтевого отведения (приведения)
+                  запястья
+                </div>
+              </div>
+            </div>
+            <div class="card__question-list">
+              <div class="card__question-list-item">
+                <div class="item-number">4</div>
+                <div class="item-text">
+                  Назовите основные направления подвижности, необходимые для
+                  выполнения утхитта хаста падангуштасаны
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card__image">
+            <img src="Утхитта Хаста Падангуштасаны 1.png" alt="" />
+          </div>
+        </div>
+
+        <!-- КОНЕЦ КАРТОЧКИ---- -->
+
+        <div class="card">
+          <div action="" class="form" id="add-form">
+            <input class="input" type="text" id="inp" />
+            <button class="button" id="btn">СГЕНЕРИРОВАТЬ</button>
+          </div>
+        </div>
+        <div class="card">
+          <div action="" class="form" id="add-form">
+            <input class="input" type="text" id="inp" />
+            <button class="button" id="btn">СГЕНЕРИРОВАТЬ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="main.js"></script>
+  </body>
+</html>
